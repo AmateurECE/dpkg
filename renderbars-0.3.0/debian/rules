@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+build:
+	cargo build --release
+	strip target/release/renderbars
+
+clean:
+	cargo clean
+
+override_dh_auto_configure:
+
+override_dh_auto_test:
