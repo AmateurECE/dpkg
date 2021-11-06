@@ -1,9 +1,10 @@
-renderbars (0.3.0-1) UNRELEASED; urgency=medium
+renderbars (0.3.1-2) UNRELEASED; urgency=medium
 
   * License under GPLv3
   * Context file is now YAML instead of custom file format
+  * Build script changes
 
- -- Ethan D. Twardy <ethan.twardy@gmail.com>  Fri, 05 Nov 2021 20:21:50 -0500
+ -- Ethan D. Twardy <ethan.twardy@gmail.com>  Sat, 06 Nov 2021 10:11:45 -0500
 
 renderbars (0.2.1-1) unstable; urgency=medium
 
