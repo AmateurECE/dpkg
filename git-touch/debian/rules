@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+build:
+	meson setup build
+	(cd build && ninja)
+
+clean:
+	rm -rf build
