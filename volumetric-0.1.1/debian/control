@@ -1,0 +1,16 @@
+Source: volumetric
+84;0;0cSection: unknown
+Priority: optional
+Maintainer: Ethan D. Twardy <ethan.twardy@gmail.com>
+Build-Depends: debhelper-compat (= 13), libssl-dev
+Standards-Version: 4.5.1
+Homepage: https://github.com/AmateurECE/Volumetric
+Vcs-Git: https://github.com/AmateurECE/Volumetric.git
+Rules-Requires-Root: no
+
+Package: volumetric
+Architecture: any
+Depends: docker-ce, libarchive13, libssl1.1, ${shlibs:Depends}, ${misc:Depends}
+Description: Version control for Docker volumes
+ Volumetric is a program I wrote to implement some kind of version control for
+ Docker volumes.
