@@ -1,0 +1,4 @@
+libgobiserde-dev_0.1.2-1_amd64.deb libdevel optional
+libgobiserde0-dbgsym_0.1.2-1_amd64.deb debug optional automatic=yes
+libgobiserde0_0.1.2-1_amd64.deb libs optional
+libgobiserde_0.1.2-1_amd64.buildinfo libs optional
