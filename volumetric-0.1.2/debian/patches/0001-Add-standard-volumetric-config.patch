@@ -1,0 +1,12 @@
+Description: Add a basic configuration file
+ Add a basic configuration file for Volumetric
+Author: Ethan D. Twardy <ethan.twardy@gmail.com>
+Origin: author
+Forwarded: not-needed
+Last-Update: 2022-01-23
+
+--- /dev/null
++++ volumetric-0.1.2/volumetric.yaml
+@@ -0,0 +1,2 @@
++version: 1.0
++volume-directory: volumes.d

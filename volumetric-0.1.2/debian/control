@@ -10,7 +10,7 @@ Rules-Requires-Root: no
 
 Package: volumetric
 Architecture: any
-Depends: docker-ce, libglib2.0, libgobiserde0, libarchive13, libssl1.1, libcurl4, libjson-c5, ${shlibs:Depends}, ${misc:Depends}
+Depends: docker-ce, libglib2.0-0, libgobiserde0, libarchive13, libssl1.1, libcurl4, libjson-c5, ${shlibs:Depends}, ${misc:Depends}
 Description: Version control for Docker volumes
  Volumetric is a program I wrote to implement some kind of version control for
  Docker volumes.
