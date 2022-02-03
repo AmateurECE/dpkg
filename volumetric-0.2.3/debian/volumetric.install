@@ -1,3 +1,5 @@
 usr/bin/volumetric
+usr/bin/volumetric-diff
+usr/lib/*/libvolumetric.so*
 lib/systemd/system/volumetric.service
 etc/volumetric/volumetric.yaml

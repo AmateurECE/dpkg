@@ -1,0 +1,15 @@
+volumetric (0.2.3-1) UNRELEASED; urgency=medium
+
+  * Add volumetric-diff tool to check status of volumes at runtime
+  * Fix owner uid/gid in extraction of archives in Volumetric
+  * General bug fixes
+  * Add libvolumetric.so library, to collect common runtime routines for
+    tools
+
+ -- Ethan D. Twardy <ethan.twardy@gmail.com>  Wed, 02 Feb 2022 21:02:25 -0600
+
+volumetric (0.1.2-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Ethan D. Twardy <ethan.twardy@gmail.com>  Sat, 22 Jan 2022 16:31:25 -0600
