@@ -1,0 +1,25 @@
+Source: libserdec
+Priority: optional
+Maintainer: Ethan D. Twardy <ethan.twardy@gmail.com>
+Build-Depends: debhelper-compat (= 13), libyaml-dev, meson
+Standards-Version: 4.5.1
+Section: libs
+Homepage: https://github.com/AmateurECE/libserdec
+Vcs-Git: https://github.com/AmateurECE/libserdec.git
+Rules-Requires-Root: no
+
+Package: libserdec-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libserdec0 (= ${binary:Version}), ${misc:Depends}
+Description: libserdec, development files
+ Development files for libserdec. See package libserdec0.
+
+Package: libserdec0
+Architecture: any
+Multi-Arch: same
+Depends: libyaml-0-2, ${shlibs:Depends}, ${misc:Depends}
+Description: Object serialization library for C
+ libserdec is a collection of object codecs for serializing and deserializing
+ objects in C, for a number of formats (currently, only YAML is supported).

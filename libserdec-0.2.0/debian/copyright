@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: libgobiserde
+Upstream-Name: libserdec
 Upstream-Contact: Ethan D. Twardy <ethan.twardy@gmail.com>
-Source: https://github.com/AmateurECE/libgobiserde.git
+Source: https://github.com/AmateurECE/libserdec.git
 
 Files: *
 Copyright: 2022 Ethan D. Twardy <ethan.twardy@gmail.com>
