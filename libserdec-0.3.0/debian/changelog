@@ -1,3 +1,10 @@
+libserdec (0.3.0-1) UNRELEASED; urgency=medium
+
+  * Implementation of YAML serialization
+  * Huge refactoring of framework
+
+ -- Ethan D. Twardy <ethan.twardy@gmail.com>  Sat, 12 Feb 2022 17:09:03 -0600
+
 libserdec (0.2.0-1) UNRELEASED; urgency=medium
 
   * libgobiserde is now libserdec

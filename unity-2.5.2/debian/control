@@ -1,0 +1,26 @@
+Source: unity
+Priority: optional
+Maintainer: Ethan D. Twardy <ethan.twardy@gmail.com>
+Build-Depends: debhelper-compat (= 13), dh-cmake, dh-cmake-compat (= 1), dh-sequence-cmake
+Standards-Version: 4.5.1
+Section: libs
+Homepage: http://throwtheswitch.org/
+Vcs-Git: https://github.com/ThrowTheSwitch/Unity.git
+Rules-Requires-Root: no
+
+Package: unity2-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Unity Test is a unit testing framework built for C.
+ Welcome to the Unity Test Project, one of the main projects of
+ ThrowTheSwitch.org. Unity Test is a unit testing framework built for C, with a
+ focus on working with embedded toolchains.
+ .
+ This project is made to test code targetting microcontrollers big and small.
+ The core project is a single C file and a pair of headers, allowing it to the
+ added to your existing build setup without too much headache. You may use any
+ compiler you wish, and may use most existing build systems including Make,
+ CMake, etc. If you'd like to leave the hard work to us, you might be
+ interested in Ceedling, a build tool also by ThrowTheSwitch.org.

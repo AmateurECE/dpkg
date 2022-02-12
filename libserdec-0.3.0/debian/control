@@ -1,7 +1,7 @@
 Source: libserdec
 Priority: optional
 Maintainer: Ethan D. Twardy <ethan.twardy@gmail.com>
-Build-Depends: debhelper-compat (= 13), libyaml-dev, meson
+Build-Depends: debhelper-compat (= 13), libyaml-dev, meson, unity2-dev
 Standards-Version: 4.5.1
 Section: libs
 Homepage: https://github.com/AmateurECE/libserdec
