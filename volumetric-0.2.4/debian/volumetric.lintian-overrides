@@ -1,0 +1,3 @@
+no-manual-page usr/bin/volumetric
+no-manual-page usr/bin/volumetric-diff
+no-manual-page usr/bin/volumetric-commit

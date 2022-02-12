@@ -1,3 +1,9 @@
+volumetric (0.2.4-1) UNRELEASED; urgency=medium
+
+  * Source refactoring for stability
+
+ -- Ethan D. Twardy <ethan.twardy@gmail.com>  Sat, 12 Feb 2022 16:01:58 -0600
+
 volumetric (0.2.3-1) UNRELEASED; urgency=medium
 
   * Add volumetric-diff tool to check status of volumes at runtime
