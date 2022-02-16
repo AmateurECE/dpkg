@@ -1,4 +1,4 @@
-usr/bin/volumetric
+usr/bin/volumetric-checkout
 usr/bin/volumetric-diff
 usr/bin/volumetric-commit
 lib/systemd/system/volumetric.service

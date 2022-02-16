@@ -8,16 +8,16 @@ Homepage: https://github.com/AmateurECE/Volumetric
 Vcs-Git: https://github.com/AmateurECE/Volumetric.git
 Rules-Requires-Root: no
 
-Package: libvolumetric0.2.4-dev
+Package: libvolumetric0-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: libvolumetric0.2.4 (= ${binary:Version}), ${misc:Depends}
+Depends: libvolumetric0 (= ${binary:Version}), ${misc:Depends}
 Description: Version control for Docker volumes--runtime library debug
  Volumetric is a program I wrote to implement some kind of version control for
  Docker volumes.
 
-Package: libvolumetric0.2.4
+Package: libvolumetric0
 Section: libs
 Architecture: any
 Multi-Arch: same
@@ -28,7 +28,7 @@ Description: Version control for Docker volumes--runtime library
 
 Package: volumetric
 Architecture: any
-Depends: libvolumetric0.2.4 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Depends: libvolumetric0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: Version control for Docker volumes
  Volumetric is a program I wrote to implement some kind of version control for
  Docker volumes.
