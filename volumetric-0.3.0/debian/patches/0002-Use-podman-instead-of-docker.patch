@@ -1,0 +1,12 @@
+--- a/volumetric-checkout/volumetric.service
++++ b/volumetric-checkout/volumetric.service
+@@ -1,7 +1,7 @@
+ [Unit]
+ Description=Versioning System for Docker Volumes
+-After=docker.service
+-Requires=docker.service
++After=podman.service
++Requires=podman.service
+ 
+ [Service]
+ ExecStart=/usr/bin/volumetric-checkout
