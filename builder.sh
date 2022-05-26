@@ -36,6 +36,11 @@ tar xzvf v$version.tar.gz -C ..
 # Move the source into the parent directory (used by debuild)
 mv v$version.tar.gz ../${package}_${version}.orig.tar.gz
 
+# If we just want to download the artifacts, stop here.
+if [[ "1" = ${DOWNLOAD_ONLY:-0} ]]; then
+    exit 0
+fi
+
 # Build the package
 debuild -us -uc
 
