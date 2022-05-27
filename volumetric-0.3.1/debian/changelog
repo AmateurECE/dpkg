@@ -1,8 +1,9 @@
-volumetric (0.3.0-1) UNRELEASED; urgency=medium
+volumetric (0.3.1-2) UNRELEASED; urgency=medium
 
   * Integration of volumetric-commit tool
+  * Support DOCKER_HOST environment variable
 
- -- Ethan D. Twardy <ethan.twardy@gmail.com>  Tue, 15 Feb 2022 20:43:50 -0600
+ -- Ethan D. Twardy <ethan.twardy@gmail.com>  Thu, 26 May 2022 22:07:18 -0500
 
 volumetric (0.2.5-1) UNRELEASED; urgency=medium
 
