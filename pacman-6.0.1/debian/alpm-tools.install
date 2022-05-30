@@ -1,0 +1,7 @@
+usr/share/locale/*
+usr/share/makepkg/*
+usr/share/pacman/*
+usr/share/zsh/*
+usr/bin/*
+etc/makepkg.conf
+etc/pacman.conf

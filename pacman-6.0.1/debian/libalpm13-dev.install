@@ -1,0 +1,4 @@
+usr/include/*
+usr/lib/*/pkgconfig/libalpm.pc
+usr/share/pkgconfig/libmakepkg.pc
+usr/lib/*/libalpm.so

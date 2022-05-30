@@ -1,0 +1,21 @@
+possible-gpl-code-linked-with-openssl
+wrong-path-for-interpreter etc/makepkg.conf *
+wrong-path-for-interpreter usr/bin/makepkg *
+wrong-path-for-interpreter usr/bin/pacman-db-upgrade *
+wrong-path-for-interpreter usr/bin/pacman-key *
+wrong-path-for-interpreter usr/bin/repo-add *
+wrong-path-for-interpreter usr/share/makepkg/*
+no-manual-page usr/bin/makepkg
+no-manual-page usr/bin/makepkg-template
+no-manual-page usr/bin/pacman
+no-manual-page usr/bin/pacman-conf
+no-manual-page usr/bin/pacman-db-upgrade
+no-manual-page usr/bin/pacman-key
+no-manual-page usr/bin/repo-add
+no-manual-page usr/bin/repo-elephant
+no-manual-page usr/bin/repo-remove
+no-manual-page usr/bin/testpkg
+no-manual-page usr/bin/vercmp
+script-not-executable etc/makepkg.conf
+script-not-executable usr/share/makepkg/*
+initial-upload-closes-no-bugs

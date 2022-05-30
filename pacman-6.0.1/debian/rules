@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+clean:
+	rm -rf test/pacman/__pycache__
+	dh $@

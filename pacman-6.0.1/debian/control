@@ -1,0 +1,57 @@
+Source: pacman
+Section: admin
+Priority: optional
+Maintainer: Ethan D. Twardy <ethan.twardy@gmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13), meson
+Standards-Version: 4.5.1
+Homepage: https://archlinux.org/pacman
+Vcs-Git: https://gitlab.archlinux.org/pacman/pacman.git
+
+Package: libalpm13
+Section: libs
+Architecture: any
+Multi-Arch: same
+Depends: libarchive13, libcurl4, libgpgme11, ${shlibs:Depends}, ${misc:Depends}
+Description: Simple library-based package manager for Arch Linux--runtime library
+ pacman is a utility which manages software packages in Linux. It uses simple
+ compressed files as a package format, and maintains a text-based package
+ database (more of a hierarchy), just in case some hand tweaking is necessary.
+ .
+ pacman does not strive to "do everything." It will add, remove and upgrade
+ packages in the system, and it will allow you to query the package database
+ for installed packages, files and owners. It also attempts to handle
+ dependencies automatically and can download packages from a remote server.
+
+Package: libalpm13-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libalpm13 (= ${binary:Version}), ${misc:Depends}
+Description: Simple library-based package manager for Arch Linux--development headers
+ pacman is a utility which manages software packages in Linux. It uses simple
+ compressed files as a package format, and maintains a text-based package
+ database (more of a hierarchy), just in case some hand tweaking is necessary.
+ .
+ pacman does not strive to "do everything." It will add, remove and upgrade
+ packages in the system, and it will allow you to query the package database
+ for installed packages, files and owners. It also attempts to handle
+ dependencies automatically and can download packages from a remote server.
+
+Package: alpm-tools
+Section: admin
+Architecture: any
+Depends:
+ bash (>= 5.1), curl, libalpm13 (= ${binary:Version}),
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Simple library-based package manager for Arch Linux
+ pacman is a utility which manages software packages in Linux. It uses simple
+ compressed files as a package format, and maintains a text-based package
+ database (more of a hierarchy), just in case some hand tweaking is necessary.
+ .
+ pacman does not strive to "do everything." It will add, remove and upgrade
+ packages in the system, and it will allow you to query the package database
+ for installed packages, files and owners. It also attempts to handle
+ dependencies automatically and can download packages from a remote server.
