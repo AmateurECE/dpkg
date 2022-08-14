@@ -1,0 +1,18 @@
+ssh-agent-service for Debian
+---------------------------
+
+This package installs a systemd user unit file that, when started, starts
+ssh-agent for the current session. This agent instance is integrated with the
+existing tooling via the following fragment in ~/.bash_aliaes:
+
+    # Configure ssh-agent for Arch Linux
+    if [[ $(systemctl --user is-active ssh-agent.service) = "active" ]]; then
+        export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+    fi
+
+And the following fragment in ~/.ssh/config:
+
+    AddKeysToAgent yes
+
+ -- Ethan D. Twardy <ethan.twardy@gmail.com>  Sun, 14 Aug 2022 16:35:03 -0500
+

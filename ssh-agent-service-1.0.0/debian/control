@@ -1,0 +1,15 @@
+Source: ssh-agent-service
+Section: admin
+Priority: optional
+Maintainer: Ethan D. Twardy <ethan.twardy@gmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.1
+
+Package: ssh-agent-service
+Architecture: all
+Depends:
+ ${misc:Depends},
+Description: ssh-agent user service
+ ssh-agent user service.
