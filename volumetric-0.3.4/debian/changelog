@@ -1,3 +1,9 @@
+volumetric (0.3.4-1) unstable; urgency=medium
+
+  * Bug fixes
+
+ -- Ethan D. Twardy <ethan.twardy@gmail.com>  Sun, 18 Sep 2022 17:37:30 -0500
+
 volumetric (0.3.3-1) unstable; urgency=medium
 
   * Mostly bug fixes related to Podman API and volume committing
