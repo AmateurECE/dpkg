@@ -9,7 +9,7 @@
 #
 # CREATED:          05/25/2022
 #
-# LAST EDITED:      05/30/2022
+# LAST EDITED:      09/22/2022
 ###
 
 set -e
@@ -44,7 +44,7 @@ if [[ ! -d debian ]]; then
 fi
 
 fullname=$(basename $PWD)
-package=${fullname%%-*}
+package=${fullname%-*}
 version=${fullname##*-}
 
 # Get the git repo
