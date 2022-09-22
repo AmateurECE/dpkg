@@ -2,7 +2,7 @@ Source: git-touch
 Section: devel
 Priority: optional
 Maintainer: Ethan D. Twardy <ethan.twardy@gmail.com>
-Build-Depends: debhelper-compat (= 13), meson
+Build-Depends: debhelper-compat (= 13), meson, libbsd-dev
 Standards-Version: 4.5.1
 Homepage: https://github.com/AmateurECE/git-touch
 Vcs-Git: https://github.com/AmateurECE/git-touch
@@ -10,6 +10,6 @@ Rules-Requires-Root: no
 
 Package: git-touch
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: libbsd0, ${shlibs:Depends}, ${misc:Depends}
 Description: Create and track changes to files using git with a single command
  This command performs the equivalent of: touch <file> && git add <file>
