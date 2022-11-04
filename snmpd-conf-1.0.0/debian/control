@@ -1,0 +1,19 @@
+Source: snmpd-conf
+Section: admin
+Priority: optional
+Maintainer: Ethan D. Twardy <ethan.twardy@gmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.1
+Vcs-Browser: https://github.com/AmateurECE/dpkg
+Vcs-Git: https://github.com/AmateurECE/dpkg
+
+Package: snmpd-conf
+Architecture: all
+Depends:
+ ${misc:Depends}, snmp-mibs-downloader, snmp, snmpd, libsnmp-base
+Description: snmpd.conf
+ This is my configuration file snmpd.conf for configuring
+ the net-snmp package. It is packaged separately for the
+ purposes of configuration management.

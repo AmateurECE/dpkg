@@ -1,0 +1,5 @@
+snmpd-conf (1.0.0-2) admin; urgency=medium
+
+  * Initial release.
+
+ -- Ethan D. Twardy <ethan.twardy@gmail.com>  Fri, 04 Nov 2022 15:14:35 -0500
