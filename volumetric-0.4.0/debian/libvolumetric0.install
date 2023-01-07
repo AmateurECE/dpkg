@@ -1,1 +1,2 @@
 usr/lib/*/libvolumetric.so.*
+var/lib/volumetric
