@@ -12,21 +12,27 @@
 # LAST EDITED:      09/22/2022
 ###
 
+: ${V_PREFIX:=1}
+
 set -e
 
 # If the source resides on GitHub, we have to clone it in a special way.
 get_github_source() {
     repository=${1%%.git}
+    file=$version.tar.gz
+    if [ "1" = "$V_PREFIX" ]; then
+	    file=v$file
+    fi
 
     # Get a .tar.gz of the source at the tag
-    printf '%s\n' "Downloading $repository/archive/v$version.tar.gz"
-    curl -L -O $repository/archive/v$version.tar.gz
+    printf '%s\n' "Downloading $repository/archive/$file"
+    curl -L -O $repository/archive/$file
 
     # Unzip it into the current directory
-    tar xzvf v$version.tar.gz -C ..
+    tar xzvf $file -C ..
 
     # Move the source into the parent directory (used by debuild)
-    mv v$version.tar.gz ../${package}_${version}.orig.tar.gz
+    mv $file ../${package}_${version}.orig.tar.gz
 }
 
 get_git_source() {
