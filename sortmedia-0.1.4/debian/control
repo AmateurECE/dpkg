@@ -1,0 +1,20 @@
+Source: sortmedia
+Section: sound
+Priority: optional
+Maintainer: Ethan D. Twardy <ethan.twardy@gmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ libtag1-dev,
+Standards-Version: 4.6.2
+Homepage: https://github.com/AmateurECE/sortmedia/
+Vcs-Git: https://github.com/AmateurECE/sortmedia.git
+
+Package: sortmedia
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ libtag1v5,
+Description: Application to sort media libraries
+ Sorts media files on the filesystem based on embedded metadata.
