@@ -2,7 +2,7 @@ Source: git-touch
 Section: devel
 Priority: optional
 Maintainer: Ethan D. Twardy <ethan.twardy@gmail.com>
-Build-Depends: debhelper-compat (= 13), meson, libbsd-dev
+Build-Depends: debhelper-compat (= 13), meson, libbsd-dev, pkg-config
 Standards-Version: 4.5.1
 Homepage: https://github.com/AmateurECE/git-touch
 Vcs-Git: https://github.com/AmateurECE/git-touch
